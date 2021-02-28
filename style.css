@@ -1,0 +1,34 @@
+.no-bullets {
+    list-style-type: none;
+}
+
+.border#profile {
+    width: 250px;
+    height: 230px;
+    border-style: solid;
+    border-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skills_topic {
+    margin-top: 3%;
+}
+.border {
+    width: 300px;
+    height: 330px;
+    background-color: #112B3F;
+    display: block;
+    margin-top: 5vh;
+}
+.skills_name {
+    margin-top: 5vh;
+    color: CCC95D;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 2em;
+}
+.skills_picture {
+    width: 300px;
+    height: 170px;
+}
