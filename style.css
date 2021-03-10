@@ -1,8 +1,14 @@
+.worklist {
+    background-color: rgba(119, 192, 255, 0.694);
+}
+
+/* index.html */
+
 .no-bullets {
     list-style-type: none;
 }
 
-.border#profile {
+#profile {
     width: 250px;
     height: 230px;
     border-style: solid;
@@ -11,26 +17,70 @@
     margin-left: auto;
     margin-right: auto;
 }
-.worklist {
-    background-color: rgba(119, 192, 255, 0.694);   
-}
+
 #skills_topic {
     margin-top: 3%;
 }
-.border {
+
+.skills {
     width: 300px;
     height: 330px;
     background-color: #112B3F;
     display: block;
     margin-top: 5vh;
 }
+
 .skills_name {
     margin-top: 5vh;
     color: CCC95D;
     font-family: 'DotGothic16', sans-serif;
     font-size: 2em;
 }
+
 .skills_picture {
     width: 300px;
     height: 170px;
+}
+
+/* work_pic.html */
+
+.page_title {
+    color: white;
+    font-size: 3vw;
+    font-family: 'DotGothic16', sans-serif;
+    border-style: dashed;
+    border-radius: 0.5vw;
+    width: 30%;
+    height: 15vw;
+    text-align: center;
+    margin-top: 3vw;
+}
+
+@media only screen and (max-width: 975px) {
+    .page_title#title_2 {
+        margin-left: 2vw;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .page_title#title_1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page_title#title_2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #plus_pic_plus {
+        text-align: center;
+    }
+    #photo_profile_pic {
+        width: 20vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #plus_1 {
+        margin-bottom: 7vw;
+    }
 }
