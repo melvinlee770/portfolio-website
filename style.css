@@ -44,43 +44,37 @@
 
 /* work_pic.html */
 
-.page_title {
+.pic_page_title {
     color: white;
-    font-size: 3vw;
     font-family: 'DotGothic16', sans-serif;
-    border-style: dashed;
-    border-radius: 0.5vw;
-    width: 30%;
-    height: 15vw;
+    font-size: 2.5em;
     text-align: center;
-    margin-top: 3vw;
 }
 
-@media only screen and (max-width: 975px) {
-    .page_title#title_2 {
-        margin-left: 2vw;
+.border_pic_page_title {
+    border-style: dashed;
+    color: white;
+    border-radius: 3px;
+    display: block;
+    width: 250px;
+    height: 230px;
+}
+
+.spacing {
+    margin-top: 10vh;
+}
+
+@media only screen and (max-width: 991px) {
+    #pic_page_profile {
+        margin-top: 10vh;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .page_title#title_1 {
-        margin-left: auto;
-        margin-right: auto;
+    #pic_page_profile {
+        margin-top: 10vh;
     }
-    .page_title#title_2 {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #plus_pic_plus {
-        text-align: center;
-    }
-    #photo_profile_pic {
-        width: 40vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #plus_1 {
-        margin-bottom: 7vw;
+    .border_pic_page_title#title_2 {
+        margin-top: 10vh;
     }
 }
