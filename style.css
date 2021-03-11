@@ -64,6 +64,29 @@
     margin-top: 10vh;
 }
 
+.self_intro {
+    color: white;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 2em;
+    width: 90%;
+    margin-top: 20px;
+    text-align:justify;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.self_intro_border {
+    border-style: solid;
+    border-radius: 15px;
+    color: white;
+    display: block;
+    width: 470px;
+    height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
 @media only screen and (max-width: 991px) {
     #pic_page_profile {
         margin-top: 10vh;
