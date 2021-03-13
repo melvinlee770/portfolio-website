@@ -80,11 +80,24 @@
     border-radius: 15px;
     color: white;
     display: block;
-    width: 470px;
-    height: 270px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+}
+
+.insta_wood_background {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.insta_acc {
+    background-color: #224D72;
+    width:100%;
+    height: 13%;
+    margin: 0;
+    padding: 0;
 }
 
 @media only screen and (max-width: 991px) {
