@@ -18,7 +18,24 @@
     margin-right: auto;
 }
 
+.programming_skills_set {
+    margin-top: 5%;
+    display: flex;
+    justify-content:space-around; 
+}
 
+/* color of fontawesome icon */
+.fa-html5 {
+    color: rgb(230, 107, 0) !important;
+}
+.fa-css3-alt {
+    color: rgb(6, 159, 255) !important;
+}
+.fa-js-square {
+    color: rgb(223, 216, 3) !important;
+}
+
+/* control the screen size */
 @media screen and (max-width: 650px) {
     .personal_description {
         font-size: 1.5em;
