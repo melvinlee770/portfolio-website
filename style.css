@@ -18,10 +18,8 @@
     margin-right: auto;
 }
 
-.programming_skills_set {
+.prgramming_skills_set {
     margin-top: 5%;
-    display: flex;
-    justify-content:space-around; 
 }
 
 /* color of fontawesome icon */
