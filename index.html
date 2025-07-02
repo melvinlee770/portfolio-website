@@ -1,69 +1,133 @@
-<!-- creator: Lee Yong Zun -->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f3abedf700.js" crossorigin="anonymous"></script>
-    <!-- fontawesome code -->
-    <link type="text/css" rel="stylesheet" href="style.css" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lee Yong Zun | Robotics Systems Engineer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+    header { background: #0a3d62; color: #fff; position: fixed; width: 100%; top: 0; z-index: 100; }
+    nav ul { display: flex; list-style: none; margin: 0; padding: 1em; justify-content: center; }
+    nav ul li { margin: 0 15px; }
+    nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+    section { padding: 100px 20px 60px; max-width: 1000px; margin: 0 auto; }
+    #about { background: #f4f4f4; text-align: center; }
+    #about img.profile-pic { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+    h1, h2 { color: #0a3d62; margin-bottom: 10px; }
+    h2 { border-bottom: 2px solid #0a3d62; padding-bottom: 5px; margin-top: 40px; }
+    .skills-container { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .skill { background: #e2e2e2; padding: 5px 10px; border-radius: 5px; }
+    .experience-item, .project-item { margin-bottom: 20px; }
+    .experience-item h3, .project-item h3 { margin: 0; }
+    .experience-item ul, .project-item ul { margin: 5px 0 0 20px; }
+    .contact-info p { margin: 5px 0; }
+    footer { background: #333; color: #fff; text-align: center; padding: 20px; }
+    @media (max-width: 600px) { nav ul { flex-direction: column; align-items: center; } }
+  </style>
 </head>
-
 <body>
-    <div class="web_title">
-        <h1 class="text-center">Hi! I'm Melvin</h1>
-    </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="website_avatar">
-        <div class="text-center">
-            <img src="picture/me.png" class="img-fluid" height="200" />
-        </div>
+  <section id="about">
+    <!-- Place PassportImgMe.jpg alongside this HTML file -->
+    <img src="picture/PassportImgMe.jpg" alt="Lee Yong Zun" class="profile-pic">
+    <h1>Lee Yong Zun</h1>
+    <p>Robotics Systems Engineer specializing in autonomous navigation, SLAM, and sensor fusion. Experienced in designing and implementing ROS-based architectures, tuning path-planning algorithms, and integrating hardware such as LiDAR, depth cameras, and embedded controllers to build robust robotic solutions.</p>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +65 8415 8771</p>
+      <p><strong>Email:</strong> 2400823@sit.singaporetech.edu.sg</p>
+      <p><strong>Location:</strong> Singapore</p>
     </div>
+  </section>
 
-    <div class="personal_description">
-        <p>
-            I am a student from Singapore Polytechnic Computing School. I am also a junior programmer.
-            I am going to use this website to show you my programming skills and also some of my previous
-            programming work. Hope you enjoy it!!
-        </p>
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill">ROS 1 Melodic / RTAB-Map / Cartographer</div>
+      <div class="skill">SLAM &amp; Path Planning (A*, Dijkstra)</div>
+      <div class="skill">Sensor Fusion: LIDAR, Depth Camera</div>
+      <div class="skill">C / C++ / Python</div>
+      <div class="skill">Gazebo / Rviz / RVIZ2</div>
+      <div class="skill">Embedded Systems (STM32, Arduino, Pixy2)</div>
+      <div class="skill">Control Systems &amp; PID Tuning</div>
+      <div class="skill">Git / GitHub / CI/CD</div>
+      <div class="skill">SolidWorks &amp; Mechanical Design</div>
+      <div class="skill">Data Analysis &amp; MATLAB</div>
     </div>
+  </section>
 
-    <div class="prgramming_skills_set container">
-        <div class="row text-center">
-            <div class="skills_gp col-sm-4 col-xs-12">
-                <i class="fab fa-html5 fa-8x"></i>
-                <h4 class="skills_description">HTML:80%</h4>
-                <div class="skills--level--background">
-                    <div class="skills--level--html"></div>
-                </div>
-            </div>
-            <div class="skills_gp col-sm-4 col-xs-12">
-                <i class="fab fa-css3-alt fa-8x"></i>
-                <h4 class="skills_description">CSS:60%</h4>
-                <div class="skills--level--background">
-                    <div class="skills--level--css"></div>
-                </div>
-            </div>
-            <div class="skills_gp col-sm-4 col-xs-12">
-                <i class="fab fa-js-square fa-8x"></i>
-                <h4 class="skills_description">Javascript:70%</h4>
-                <div class="skills--level--background">
-                    <div class="skills--level--js"></div>
-                </div>
-            </div>
-        </div>
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="experience-item">
+      <h3>Student Coach, Singapore Institute of Technology</h3>
+      <span>Sep 2024 – Present</span>
+      <ul>
+        <li>Mentored peers on ROS node development and simulation using Gazebo.</li>
+        <li>Conducted workshops on SLAM techniques and sensor calibration.</li>
+        <li>Ensured lab safety and maintained robotics equipment (LiDAR, cameras, controllers).</li>
+      </ul>
     </div>
+    <div class="experience-item">
+      <h3>NSF Comms Trainer, Singapore Civil Defence Force</h3>
+      <span>May 2022 – May 2024</span>
+      <ul>
+        <li>Delivered technical training on communication networks and embedded radio systems.</li>
+        <li>Monitored and troubleshooted RF modules and Zigbee networks during live operations.</li>
+        <li>Collaborated on integration tests with UAV and ground robotics units.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Intern Website Developer &amp; Desktop Engineer, Rayton Solution Pte Ltd</h3>
+      <span>Sep 2021 – Feb 2022</span>
+      <ul>
+        <li>Developed internal dashboards for monitoring IoT devices using Node.js and React.</li>
+        <li>Improved system performance by optimizing SQL queries for real-time data.</li>
+        <li>Supported technical team on MOE robotics curriculum implementation.</li>
+      </ul>
+    </div>
+  </section>
 
+  <section id="projects">
+    <h2>Key Projects</h2>
+    <div class="project-item">
+      <h3>Autonomous Mapping &amp; Navigation</h3>
+      <p><em>Academic Project, SIT</em></p>
+      <ul>
+        <li>Implemented RTAB-Map SLAM for 2D environment mapping with Orbbec DaBai depth camera.</li>
+        <li>Fused LiDAR (EAI X2L) and depth data to classify walls, obstacles, and ramps.</li>
+        <li>Customized recovery behaviors in move_base: reverse maneuvers and dynamic path replanning.</li>
+      </ul>
+    </div>
+    <div class="project-item">
+      <h3>STM32 Mecanum Wheel Robot</h3>
+      <p><em>Personal Project</em></p>
+      <ul>
+        <li>Configured Pixy2 camera for object tracking and UART control commands.</li>
+        <li>Tuned PID controllers for omni-directional drive using custom ROS nodes.</li>
+        <li>Demonstrated precise maneuvering in cluttered indoor environment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For detailed technical discussions or collaboration opportunities, feel free to reach out:</p>
+    <p>Email: <a href="mailto:2400823@sit.singaporetech.edu.sg">2400823@sit.singaporetech.edu.sg</a></p>
+    <p>Phone: <a href="tel:+6584158771">+65 8415 8771</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lee Yong Zun. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>
